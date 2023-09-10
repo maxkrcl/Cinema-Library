@@ -1,0 +1,13 @@
+body {
+    margin: 10px;
+}
+
+table {
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #000;
+}
