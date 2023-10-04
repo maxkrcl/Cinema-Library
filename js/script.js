@@ -1,3 +1,5 @@
+let tg = window.Telegram.WebApp;
+
 let CINEMA_LIBRARY = {
 
     "Барби": {
@@ -31,6 +33,8 @@ form.addEventListener("submit", (event) => {
     data = Object.fromEntries(data.entries());
     data = JSON.stringify(data);
 
+    tg.sendData(data);
+    
     const debugP = document.createElement("p");
     debugP.textContent = data;
     form.appendChild(debugP);
