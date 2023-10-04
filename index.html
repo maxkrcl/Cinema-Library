@@ -8,73 +8,75 @@
 </head>
 <body>
 
-    <h1>Название проекта</h1>
-    <form action="">
-        <table>
-            <tbody>
-
-                <tr>
-                    <td>Полное или частичное название фильма</td>
-                    <td><input type="text"></td>
-                </tr>
-
-                <tr>
-                    <td>Год</td>
-                    <td><input type="text"></td>
-                </tr>
-
-                <tr>
-                    <td>Или интервал</td>
-                    <td>с
-                        <select>
-                            <option value="">-</option>
-                            <option value="">2021</option>
-                            <option value="">2022</option>
-                            <option value="">2023</option>
-                        </select>
-                        по
-                        <select>
-                            <option value="">-</option>
-                            <option value="">2023</option>
-                            <option value="">2022</option>
-                            <option value="">2021</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Страна</td>
-                    <td>
-                        <select>
-                            <option value="">-</option>
-                            <option value="">США</option>
-                            <option value="">Великобритания</option>
-                        </select>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Жанр</td>
-                    <td>
-                        <select>
-                            <option value="">-</option>
-                            <option value="">Комедия</option>
-                            <option value="">Приключения</option>
-                            <option value="">Фэнтези</option>
-                            <option value="">Биография</option>
-                            <option value="">Драма</option>
-                            <option value="">История</option>
-                            <option value="">Мультфильм</option>
-                            <option value="">Фантастика</option>
-                            <option value="">Боевик</option>
-                        </select>
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-        <input type="submit" value="Поиск">
-    </form>
+    <div class="wrapper">
+        <h1>Cinema Library</h1>
+        <form action="index.html">
+            <table>
+                <tbody>
+    
+                    <tr>
+                        <td>Полное или частичное название фильма</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Год</td>
+                        <td><input type="text" name="year0"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Или интервал</td>
+                        <td>с
+                            <select name="year1">
+                                <option value="">-</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                            </select>
+                            по
+                            <select name="year2">
+                                <option value="">-</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Страна</td>
+                        <td>
+                            <select name="country">
+                                <option value="">-</option>
+                                <option value="США">США</option>
+                                <option value="Великобритания">Великобритания</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>Жанр</td>
+                        <td>
+                            <select name="genre">
+                                <option value="">-</option>
+                                <option value="Комедия">Комедия</option>
+                                <option value="Приключения">Приключения</option>
+                                <option value="Фэнтези">Фэнтези</option>
+                                <option value="Биография">Биография</option>
+                                <option value="Драма">Драма</option>
+                                <option value="История">История</option>
+                                <option value="Мультфильм">Мультфильм</option>
+                                <option value="Фантастика">Фантастика</option>
+                                <option value="Боевик">Боевик</option>
+                            </select>
+                        </td>
+                    </tr>
+    
+                </tbody>
+            </table>
+            <input type="submit" value="Поиск" id="search">
+        </form>
+    </div>
 
     <script src="js/script.js"></script>
 
