@@ -22,3 +22,16 @@ let CINEMA_LIBRARY = {
     },
 
 };
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let data = new FormData(form);
+    data = Object.fromEntries(data.entries());
+    data = JSON.stringify(data);
+
+    const debugP = document.createElement("p");
+    debugP.textContent = data;
+    form.appendChild(debugP);
+});
